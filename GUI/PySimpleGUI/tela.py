@@ -2,7 +2,6 @@ import PySimpleGUI as sg
 
 class TelaPython:
     def __init__(self):
-        sg.change_look_and_feel('DarkBrown4')
         #Layout
         layout = [
             [sg.Text('nome',size=(5,0)),sg.Input(size=(15,0),key='nome')],
