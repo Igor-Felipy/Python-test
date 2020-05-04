@@ -1,17 +1,35 @@
 from random import randint
+import PySimpleGUI as sg
 print('Bem-vindo ao jogo chute um numero!')
+class game:
+    def __init__(self):
+        #layout
+        layout = [
+            [sg.Text('Digite o numero maior a ser jogado'),sg.Input(key='qtd')],
+            [sg.Text('Chute um numero:'),sg.Input(key='c')],
+            [sg.Button('chute')],
+            [sg.Output()]
+        ]
+        #janela
+        self.janela = sg.Window('Jogo de Chute').layout(layout)
 
-while True:
-    qtd = int(input('Digite a quantidade de possibilidades: '))
-    r = randint(0, qtd)
-    while True:
-        c = int(input('Chute um numero entre 0 e {}: '.format(qtd)))
-        if c == r:
-            print('Você acertou!')
-            break
-        elif c < r:
-           print('Chute um numero maior!')
-        elif c > r:
-            print('Chute um numero menor!')
-        else:
-            continue
+    #extração de dados
+    def iniciar(self):
+        while True:
+            self.Button, self.Values = self.janela.Read()
+            qtd = self.values['qtd']
+            r = randint(0, qtd)
+            while True:
+                c = self.values['c']
+                if c == r:
+                    print('Você acertou!')
+                    break
+                elif c < r:
+                    print('Chute um numero maior!')
+                elif c > r:
+                    print('Chute um numero menor!')
+                else:
+                    continue
+
+jogo = game()
+jogo.iniciar()
