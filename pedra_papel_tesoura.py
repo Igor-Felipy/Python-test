@@ -29,9 +29,9 @@ class Tela:
                 print('='*15)
                 print('voce escolheu Pedra')
                 print('='*15)
-                if a = 'pedra':
+                if a == 'pedra':
                     print('empate')
-                elif a = 'tesoura':
+                elif a == 'tesoura':
                     print('você venceu')
                 else:
                     print('Você perdeu!')
@@ -39,9 +39,9 @@ class Tela:
                 print('='*15)
                 print('voce escolheu Papel')
                 print('='*15)
-                if a = 'papel':
+                if a == 'papel':
                     print('empate')
-                elif a = 'pedra':
+                elif a == 'pedra':
                     print('Voce venceu')
                 else:
                     print('voce perdeu')
@@ -49,9 +49,9 @@ class Tela:
                 print('='*15)
                 print('voce escolheu tesoura')
                 print('='*15)
-                if a = 'tesoura':
+                if a == 'tesoura':
                     print('empate')
-                elif a = 'papel':
+                elif a == 'papel':
                     print('Voce venceu')
                 else:
                     print('Voce perdeu')
