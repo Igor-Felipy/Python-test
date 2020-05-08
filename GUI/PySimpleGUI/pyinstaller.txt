@@ -1,0 +1,1 @@
+pyinstaller --onefile 'gera um arquivo unico' --noconsole 'não abre o console' nome_do_arquivo
