@@ -1,8 +1,8 @@
 #map(função, *sequencia) --> Objeto map
 def qua(x): return x**2
 
-mapa = map(qua, [1,2,3,4,5]) 
-listmap = list(map(qua, [1,2,3,4,5]))
+mapa = map(qua, [1,2,3,4,5]) # é necessario transformar um objeto map em tuplas ou listas
+listmap = list(mapa)
 ran = tuple(map(qua, range(10)))
 lamb = list(map(lambda x: x**3, range(10)))
 
