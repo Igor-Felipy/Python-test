@@ -1,4 +1,5 @@
 from random import randint
+from time import sleep
 lista = list()
 jogos = list()
 print('-'*30)
@@ -23,3 +24,6 @@ while tot < quant:
 print('-='*3,f'sorteando {quant} jogos','-='*3)
 for i, l in enumerate(jogos):
     print(f'Jogo {i+1}: {l} ')
+    sleep(1)
+print('Aqui estão seus jogos')
+print('Boa sorte!!')
