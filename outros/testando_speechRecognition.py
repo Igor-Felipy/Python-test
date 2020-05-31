@@ -9,7 +9,7 @@ def ouvir_microfone():
         audio = microfone.listen(source)
 
 try:
-    frase = microfone.recognize_google(audio, language='pt-BR')
+    frase = microfone.recognize_google(audioe, language='pt-BR')
     print('Você disse: ' + frase)
 except sr.UnknownValueError:
     print('não entendi')
