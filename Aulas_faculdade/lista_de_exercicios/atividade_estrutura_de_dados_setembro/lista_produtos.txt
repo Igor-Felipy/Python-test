@@ -1,0 +1,1 @@
+geladeria 2300 radio 400 tv 1000 geladeira 1399 fogao 245 micro_ondas 100 computador 1400 computador_gamer 4900
