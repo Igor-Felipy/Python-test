@@ -8,7 +8,7 @@ password = str(input('Enter a password : '))
 guess_password = ""
 
 while(guess_password != password):
-    guess_password = random.choices(chars_list, r=len(password))
+    guess_password = random.choices(chars_list, k=len(password))
 
     print(str(guess_password))
 
